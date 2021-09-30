@@ -1,4 +1,4 @@
-package yosifovemil.printable
+package yosifovemil.chapter1
 
 trait Printable[A] {
   def format(a: A): String
@@ -22,4 +22,14 @@ object Printable {
 
   def print[A](a: A)(implicit printable: Printable[A]): Unit =
     println(format(a)(printable))
+}
+
+object PrintableSyntax {
+  implicit class PrintableOps[A](get: A) {
+    def format(implicit printable: Printable[A]): String =
+      printable.format(get)
+
+    def print(implicit printable: Printable[A]): Unit =
+      println(printable.format(get))
+  }
 }
