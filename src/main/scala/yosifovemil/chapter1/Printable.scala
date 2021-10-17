@@ -1,7 +1,13 @@
 package yosifovemil.chapter1
 
-trait Printable[A] {
+trait Printable[A] { self =>
   def format(a: A): String
+
+  def contramap[B](func: B => A): Printable[B] =
+    new Printable[B] {
+      def format(value: B): String =
+        self.format(func(value))
+    }
 }
 
 object PrintableInstances {
@@ -33,3 +39,5 @@ object PrintableSyntax {
       println(printable.format(get))
   }
 }
+
+final case class Box[A](value: A)
