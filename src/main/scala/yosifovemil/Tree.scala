@@ -1,4 +1,4 @@
-package yosifovemil.chapter3
+package yosifovemil
 
 import cats.Functor
 

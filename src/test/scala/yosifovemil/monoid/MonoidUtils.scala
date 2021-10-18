@@ -1,4 +1,4 @@
-package yosifovemil.chapter2
+package yosifovemil.monoid
 
 object MonoidUtils {
 

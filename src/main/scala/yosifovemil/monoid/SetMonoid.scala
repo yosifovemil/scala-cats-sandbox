@@ -1,5 +1,4 @@
-package yosifovemil.chapter2
-
+package yosifovemil.monoid
 import scala.collection.immutable.Set
 
 object SetMonoid {

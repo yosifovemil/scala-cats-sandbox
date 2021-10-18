@@ -1,4 +1,4 @@
-package yosifovemil.chapter2
+package yosifovemil.monoid
 
 trait Semigroup[A] {
   def combine(x: A, y: A): A

@@ -1,4 +1,4 @@
-package yosifovemil.chapter1
+package yosifovemil
 
 trait Printable[A] { self =>
   def format(a: A): String
@@ -20,6 +20,9 @@ object PrintableInstances {
     new Printable[Int] {
       def format(a: Int): String = a.toString
     }
+
+  implicit def printableBox[A](implicit p: Printable[A]): Printable[Box[A]] =
+    p.contramap(_.value)
 }
 
 object Printable {

@@ -1,10 +1,10 @@
-package yosifovemil.chapter1
+package yosifovemil
 
 import cats._
 import cats.implicits.catsSyntaxEq
 import cats.instances.int._
 import cats.instances.string._
-import yosifovemil.chapter1.PrintableInstances._
+import PrintableInstances._
 
 final case class Cat(name: String, age: Int, color: String)
 

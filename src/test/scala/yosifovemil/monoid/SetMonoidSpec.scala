@@ -1,9 +1,9 @@
-package yosifovemil.chapter2
+package yosifovemil.monoid
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import yosifovemil.chapter2.SetMonoid._
-import yosifovemil.chapter2.MonoidUtils._
+import yosifovemil.monoid.MonoidUtils._
+import yosifovemil.monoid.SetMonoid._
 
 
 class SetMonoidSpec extends AnyFlatSpec with Matchers {

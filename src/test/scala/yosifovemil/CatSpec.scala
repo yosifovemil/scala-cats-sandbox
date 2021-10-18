@@ -1,9 +1,7 @@
-package yosifovemil.chapter1
+package yosifovemil
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-
-import cats._
 
 class CatSpec extends AnyFlatSpec with Matchers {
   "Cat.catShow.show" should "create the correct instance for Catt " in new Scope {

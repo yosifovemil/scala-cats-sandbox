@@ -1,8 +1,9 @@
-package yosifovemil.chapter2
+package yosifovemil.monoid
+
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import yosifovemil.chapter2.BooleanMonoid._
-import yosifovemil.chapter2.MonoidUtils._
+import yosifovemil.monoid.BooleanMonoid._
+import yosifovemil.monoid.MonoidUtils._
 
 
 class BooleanMonoidSpec extends AnyFlatSpec with Matchers {

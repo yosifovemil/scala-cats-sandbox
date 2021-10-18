@@ -1,11 +1,9 @@
-package yosifovemil.chapter3
+package yosifovemil
 
+import cats.syntax.functor._
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import yosifovemil.chapter3._
-import yosifovemil.chapter3.TreeFunctor._
-import cats.instances.function._ // for Functor
-import cats.syntax.functor._     // for map
+import yosifovemil.TreeFunctor._     // for map
 
 
 class TreeSpec extends AnyFlatSpec with Matchers {

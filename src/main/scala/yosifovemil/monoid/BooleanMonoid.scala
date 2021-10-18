@@ -1,4 +1,4 @@
-package yosifovemil.chapter2
+package yosifovemil.monoid
 
 object BooleanMonoid {
   implicit val andMonoid: Monoid[Boolean]  = new Monoid[Boolean] {
