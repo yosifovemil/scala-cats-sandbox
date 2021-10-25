@@ -11,9 +11,8 @@ object ListFunctions {
     l.foldRight(List.empty[B])((a, acc) => f(a) ++ acc)
 
   def filter[A](l: List[A])(f: A => Boolean): List[A] =
-    l.foldRight(List.empty[A])((a, acc) => if (f(a)) acc :: a else acc)
+    l.foldRight(List.empty[A])((a, acc) => if (f(a)) a :: acc else acc)
 
   def sumWithNumeric[A](l: List[A])(implicit numeric: Numeric[A]): A =
     l.foldLeft(numeric.zero)(numeric.plus)
 }
-

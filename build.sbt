@@ -10,7 +10,8 @@ lazy val root = (project in file("."))
     name := "scala-cats-sandbox",
     libraryDependencies ++= Seq(
       cats,
-      scalaTest % Test
+      scalaTest % Test,
+      "org.scalatestplus" %% "scalacheck-1-15" % "3.2.10.0" % "test"
     ),
     scalacOptions ++= Seq(
       "-Xfatal-warnings"
