@@ -11,7 +11,7 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       cats,
       scalaTest % Test,
-      "org.scalatestplus" %% "scalacheck-1-15" % "3.2.10.0" % "test"
+      scalaTestPlus
     ),
     scalacOptions ++= Seq(
       "-Xfatal-warnings"

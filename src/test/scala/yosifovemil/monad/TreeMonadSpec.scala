@@ -11,11 +11,11 @@ import yosifovemil.Tree._
 
 class TreeMonadSpec extends AnyFlatSpec with ScalaCheckPropertyChecks with Matchers {
   "TreeMonad" should "conform to the left identity law" in {
-    forAll{ leafValue: Int => {
+    forAll{ leafValue: Int =>
       def func: Int => Tree[Double] = x => leaf(x.toDouble)
       val tree = treeMonad.pure(leafValue)
       treeMonad.flatMap(tree)(func) shouldEqual func(leafValue)
-    }}
+    }
   }
 
   it should "conform to the right identity law" in {
